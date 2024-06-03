@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('/BodyButterWebsite/images/z\'aya.png'); /* Replace with the actual path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;  /* Adjust the top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;  /* Adjust the width as needed */
+    height: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
