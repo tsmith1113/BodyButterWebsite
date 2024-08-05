@@ -3,82 +3,174 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Z'aya Body Butter</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Z'aya</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/slide1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Welcome to Z'aya Body Butter</h5>
+              <p>Experience luxury and nourishment for your skin.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Natural Ingredients</h5>
+              <p>Only the finest ingredients for the best results.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/slide3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Moisturize and Revitalize</h5>
+              <p>Keep your skin feeling soft and rejuvenated.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <section id="about" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/about.jpg" class="img-fluid" alt="About Us">
+            </div>
+            <div class="col-md-6">
+              <h2>About Us</h2>
+              <p>Welcome to Z'aya Body Butter. We are dedicated to providing you with luxurious body butter products that nourish and revitalize your skin. Our products are made with the finest natural ingredients to ensure the best results.</p>
+              <p>Founded by , Z'aya Body Butter is committed to quality and customer satisfaction. Discover the difference our body butter can make for your skin.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="py-5 bg-light">
+        <div class="container">
+          <div class="text-center">
+            <h2>Our Products</h2>
+            <p>Explore our range of luxurious body butter products.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/product1.jpg" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                  <h5 class="card-title">Product 1</h5>
+                  <p class="card-text">A brief description of Product 1.</p>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
               </div>
             </div>
-          </nav>
-    </header>
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                 <!-- <h1>Hello, world!</h1>    -->
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/product2.jpg" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                  <h5 class="card-title">Product 2</h5>
+                  <p class="card-text">A brief description of Product 2.</p>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
                 </div>
-                <div class="logo">
-                    <img src="/BodyButterWebsite/images/logo.png" alt="Logo">  <!-- Replace with your logo image path -->
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="images/product3.jpg" class="card-img-top" alt="Product 3">
+                <div class="card-body">
+                  <h5 class="card-title">Product 3</h5>
+                  <p class="card-text">A brief description of Product 3.</p>
+                  <a href="#" class="btn btn-primary">Buy Now</a>
                 </div>
-
+              </div>
             </div>
-            <div class="row">
-                <div class="col">
-            </div>
+          </div>
         </div>
-    </div>
-  
-    
-     </main>
+      </section>
 
+      <section id="contact" class="py-5">
+        <div class="container">
+          <div class="text-center">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Reach out to us with any questions or feedback.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <h3>Our Location</h3>
+              <p>123 Main Street, Woodstock, GA 30188</p>
+              <h3>Email</h3>
+              <p>info@zayabodybutter.com</p>
+              <h3>Phone</h3>
+              <p>(404) 786-5682</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-     <footer>
+    <footer class="text-center py-4">
+      <p>&copy; 2024 Z'aya Body Butter. All rights reserved.</p>
+    </footer>
 
-     </footer>
-
-
-
-
-
-
-
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="script/site.js"></script>
-  </body>
-</html>
+    <script src="script/site.js">
